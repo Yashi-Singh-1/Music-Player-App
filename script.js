@@ -259,8 +259,10 @@ audio.addEventListener("ended", () => {
     } else {
       userData.currentSong = null;
       userData.songCurrentTime = 0;  
- pauseSong();
+  pauseSong();
   setPlayerDisplay();
+  highlightCurrentSong();
+  setPlayButtonAccessibleText();
   highlightCurrentSong();
   setPlayButtonAccessibleText();
 
